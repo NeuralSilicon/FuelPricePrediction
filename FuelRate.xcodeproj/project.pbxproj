@@ -1,0 +1,928 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		580D463326842ECF00A52255 /* AccountManagment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D463226842ECF00A52255 /* AccountManagment.swift */; };
+		580D463626843C7D00A52255 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D463526843C7D00A52255 /* Validation.swift */; };
+		580D4639268481B300A52255 /* AcountActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D4638268481B300A52255 /* AcountActions.swift */; };
+		589A138526816FE60008AFC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 589A138426816FE60008AFC9 /* Assets.xcassets */; };
+		589A138826816FE60008AFC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 589A138626816FE60008AFC9 /* LaunchScreen.storyboard */; };
+		589A139326816FE60008AFC9 /* FuelPriceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A139226816FE60008AFC9 /* FuelPriceTests.swift */; };
+		589A13BD268170D30008AFC9 /* FuelQuoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A13BB268170D30008AFC9 /* FuelQuoteVC.swift */; };
+		589A13C0268170D30008AFC9 /* FuelQuoteVCConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A13BC268170D30008AFC9 /* FuelQuoteVCConfig.swift */; };
+		589A13C5268170DB0008AFC9 /* FuelPriceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A13C3268170DA0008AFC9 /* FuelPriceVC.swift */; };
+		589A13C8268170DB0008AFC9 /* FuelPriceVCConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A13C4268170DB0008AFC9 /* FuelPriceVCConfig.swift */; };
+		589A13CD268170E20008AFC9 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A13CB268170E20008AFC9 /* Home.swift */; };
+		589A13D0268170E20008AFC9 /* HomeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A13CC268170E20008AFC9 /* HomeConfig.swift */; };
+		589A13D6268170EF0008AFC9 /* GetQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A13D4268170EF0008AFC9 /* GetQuote.swift */; };
+		589A13D9268170EF0008AFC9 /* GetQuoteVCConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A13D5268170EF0008AFC9 /* GetQuoteVCConfig.swift */; };
+		589A13DF268170F70008AFC9 /* TabbarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A13DC268170F70008AFC9 /* TabbarModel.swift */; };
+		589A13E2268170F70008AFC9 /* TabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A13DD268170F70008AFC9 /* TabbarVC.swift */; };
+		589A13E5268170F70008AFC9 /* TabbarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A13DE268170F70008AFC9 /* TabbarConfig.swift */; };
+		589A13EA268171020008AFC9 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A13E8268171020008AFC9 /* Setting.swift */; };
+		589A13ED268171020008AFC9 /* SettingConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A13E9268171020008AFC9 /* SettingConfig.swift */; };
+		589A13F4268171230008AFC9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A13F3268171230008AFC9 /* Constants.swift */; };
+		589A13F9268171280008AFC9 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A13F7268171280008AFC9 /* TextField.swift */; };
+		589A13FC268171280008AFC9 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A13F8268171280008AFC9 /* Components.swift */; };
+		589A14022681714E0008AFC9 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A14012681714E0008AFC9 /* Client.swift */; };
+		589A14032681714E0008AFC9 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A14012681714E0008AFC9 /* Client.swift */; };
+		589A1406268171590008AFC9 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A1405268171590008AFC9 /* Address.swift */; };
+		589A1407268171590008AFC9 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A1405268171590008AFC9 /* Address.swift */; };
+		589A140A268171620008AFC9 /* FuelQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A1409268171620008AFC9 /* FuelQuote.swift */; };
+		589A140B268171620008AFC9 /* FuelQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A1409268171620008AFC9 /* FuelQuote.swift */; };
+		589A140E2681716C0008AFC9 /* FuelFactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A140D2681716C0008AFC9 /* FuelFactors.swift */; };
+		589A140F2681716C0008AFC9 /* FuelFactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A140D2681716C0008AFC9 /* FuelFactors.swift */; };
+		589A1416268177960008AFC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A1415268177960008AFC9 /* AppDelegate.swift */; };
+		589A141F26817EF30008AFC9 /* Registeration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A141E26817EF30008AFC9 /* Registeration.swift */; };
+		589A14212681807B0008AFC9 /* Modification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A14202681807B0008AFC9 /* Modification.swift */; };
+		589A1423268185220008AFC9 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A1422268185220008AFC9 /* LoginVC.swift */; };
+		589A14252681854E0008AFC9 /* LoginVCConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A14242681854E0008AFC9 /* LoginVCConfig.swift */; };
+		589A1427268196B80008AFC9 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A1426268196B80008AFC9 /* Login.swift */; };
+		589A142A26819BA70008AFC9 /* RegisterationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A142926819BA70008AFC9 /* RegisterationVC.swift */; };
+		589A142C26819BB00008AFC9 /* RegisterationVCConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A142B26819BB00008AFC9 /* RegisterationVCConfig.swift */; };
+		589A142E2681C7C60008AFC9 /* RegisterationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A142D2681C7C60008AFC9 /* RegisterationForm.swift */; };
+		589BF482268235C200B69DA5 /* StateDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589BF481268235C200B69DA5 /* StateDropDown.swift */; };
+		589BF48826823B7D00B69DA5 /* states.json in Resources */ = {isa = PBXBuildFile; fileRef = 589BF48726823B7D00B69DA5 /* states.json */; };
+		589BF48D2682BF2B00B69DA5 /* FuelPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589BF48C2682BF2B00B69DA5 /* FuelPrice.swift */; };
+		589BF49026836C9100B69DA5 /* DatabaseStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589BF48F26836C9100B69DA5 /* DatabaseStack.swift */; };
+		589BF49B2683D79C00B69DA5 /* UpdateInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589BF49A2683D79C00B69DA5 /* UpdateInfoVC.swift */; };
+		589BF49D2683D8DB00B69DA5 /* UpdateInfoVCConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589BF49C2683D8DB00B69DA5 /* UpdateInfoVCConfig.swift */; };
+		589D8840268535BA002F7031 /* DatabaseStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589BF48F26836C9100B69DA5 /* DatabaseStack.swift */; };
+		589D8841268535BE002F7031 /* FuelPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589BF48C2682BF2B00B69DA5 /* FuelPrice.swift */; };
+		589D8842268535C3002F7031 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A1426268196B80008AFC9 /* Login.swift */; };
+		589D8843268535C6002F7031 /* Registeration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A141E26817EF30008AFC9 /* Registeration.swift */; };
+		589D8844268535C9002F7031 /* Modification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A14202681807B0008AFC9 /* Modification.swift */; };
+		589D8845268535CB002F7031 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D463526843C7D00A52255 /* Validation.swift */; };
+		589D8846268535CE002F7031 /* DeleteAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D507262684D19B0025BC28 /* DeleteAccount.swift */; };
+		589D884926854061002F7031 /* FieldValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589D884826854061002F7031 /* FieldValidationTests.swift */; };
+		589D884B268552AC002F7031 /* FuelPriceDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589D884A268552AC002F7031 /* FuelPriceDummy.swift */; };
+		589D884C2685532B002F7031 /* FuelPriceDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589D884A268552AC002F7031 /* FuelPriceDummy.swift */; };
+		58D507252684BE160025BC28 /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D507242684BE160025BC28 /* ResetPassword.swift */; };
+		58D507272684D19B0025BC28 /* DeleteAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D507262684D19B0025BC28 /* DeleteAccount.swift */; };
+		58D507292684D5120025BC28 /* PrivacyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D507282684D5120025BC28 /* PrivacyVC.swift */; };
+		AF0F50918EE24F3FBA3130F6 /* libPods-FuelRateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E24380D3B82ED1A8A22323D0 /* libPods-FuelRateTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		589A138F26816FE60008AFC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 589A137026816FE50008AFC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 589A137726816FE50008AFC9;
+			remoteInfo = FuelRate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05EBDC9BDD515332B3EE66E0 /* Pods-FuelRate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelRate.debug.xcconfig"; path = "Target Support Files/Pods-FuelRate/Pods-FuelRate.debug.xcconfig"; sourceTree = "<group>"; };
+		33F836681931AD20E7B464E2 /* Pods-FuelRate-FuelRateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelRate-FuelRateUITests.release.xcconfig"; path = "Target Support Files/Pods-FuelRate-FuelRateUITests/Pods-FuelRate-FuelRateUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4AF4324AD086FB01A46C90E3 /* Pods-FuelRateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelRateTests.debug.xcconfig"; path = "Target Support Files/Pods-FuelRateTests/Pods-FuelRateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		580D463226842ECF00A52255 /* AccountManagment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManagment.swift; sourceTree = "<group>"; };
+		580D463526843C7D00A52255 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		580D4638268481B300A52255 /* AcountActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcountActions.swift; sourceTree = "<group>"; };
+		589A137826816FE50008AFC9 /* FuelRate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuelRate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		589A138426816FE60008AFC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		589A138726816FE60008AFC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		589A138926816FE60008AFC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		589A138E26816FE60008AFC9 /* FuelRateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuelRateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		589A139226816FE60008AFC9 /* FuelPriceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelPriceTests.swift; sourceTree = "<group>"; };
+		589A139426816FE60008AFC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		589A13BB268170D30008AFC9 /* FuelQuoteVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuelQuoteVC.swift; sourceTree = "<group>"; };
+		589A13BC268170D30008AFC9 /* FuelQuoteVCConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuelQuoteVCConfig.swift; sourceTree = "<group>"; };
+		589A13C3268170DA0008AFC9 /* FuelPriceVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuelPriceVC.swift; sourceTree = "<group>"; };
+		589A13C4268170DB0008AFC9 /* FuelPriceVCConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuelPriceVCConfig.swift; sourceTree = "<group>"; };
+		589A13CB268170E20008AFC9 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		589A13CC268170E20008AFC9 /* HomeConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeConfig.swift; sourceTree = "<group>"; };
+		589A13D4268170EF0008AFC9 /* GetQuote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetQuote.swift; sourceTree = "<group>"; };
+		589A13D5268170EF0008AFC9 /* GetQuoteVCConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetQuoteVCConfig.swift; sourceTree = "<group>"; };
+		589A13DC268170F70008AFC9 /* TabbarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarModel.swift; sourceTree = "<group>"; };
+		589A13DD268170F70008AFC9 /* TabbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarVC.swift; sourceTree = "<group>"; };
+		589A13DE268170F70008AFC9 /* TabbarConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarConfig.swift; sourceTree = "<group>"; };
+		589A13E8268171020008AFC9 /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		589A13E9268171020008AFC9 /* SettingConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingConfig.swift; sourceTree = "<group>"; };
+		589A13F3268171230008AFC9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		589A13F7268171280008AFC9 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		589A13F8268171280008AFC9 /* Components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		589A14012681714E0008AFC9 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		589A1405268171590008AFC9 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		589A1409268171620008AFC9 /* FuelQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelQuote.swift; sourceTree = "<group>"; };
+		589A140D2681716C0008AFC9 /* FuelFactors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelFactors.swift; sourceTree = "<group>"; };
+		589A1415268177960008AFC9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		589A141E26817EF30008AFC9 /* Registeration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registeration.swift; sourceTree = "<group>"; };
+		589A14202681807B0008AFC9 /* Modification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modification.swift; sourceTree = "<group>"; };
+		589A1422268185220008AFC9 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		589A14242681854E0008AFC9 /* LoginVCConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVCConfig.swift; sourceTree = "<group>"; };
+		589A1426268196B80008AFC9 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		589A142926819BA70008AFC9 /* RegisterationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationVC.swift; sourceTree = "<group>"; };
+		589A142B26819BB00008AFC9 /* RegisterationVCConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationVCConfig.swift; sourceTree = "<group>"; };
+		589A142D2681C7C60008AFC9 /* RegisterationForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationForm.swift; sourceTree = "<group>"; };
+		589BF481268235C200B69DA5 /* StateDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateDropDown.swift; sourceTree = "<group>"; };
+		589BF48726823B7D00B69DA5 /* states.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = states.json; sourceTree = "<group>"; };
+		589BF48C2682BF2B00B69DA5 /* FuelPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelPrice.swift; sourceTree = "<group>"; };
+		589BF48F26836C9100B69DA5 /* DatabaseStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseStack.swift; sourceTree = "<group>"; };
+		589BF49A2683D79C00B69DA5 /* UpdateInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateInfoVC.swift; sourceTree = "<group>"; };
+		589BF49C2683D8DB00B69DA5 /* UpdateInfoVCConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateInfoVCConfig.swift; sourceTree = "<group>"; };
+		589D884826854061002F7031 /* FieldValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldValidationTests.swift; sourceTree = "<group>"; };
+		589D884A268552AC002F7031 /* FuelPriceDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelPriceDummy.swift; sourceTree = "<group>"; };
+		58D507242684BE160025BC28 /* ResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassword.swift; sourceTree = "<group>"; };
+		58D507262684D19B0025BC28 /* DeleteAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAccount.swift; sourceTree = "<group>"; };
+		58D507282684D5120025BC28 /* PrivacyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyVC.swift; sourceTree = "<group>"; };
+		6E4CF7E55E0AE59D9678F5AC /* libPods-FuelRate-FuelRateUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FuelRate-FuelRateUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D30F79CAFA439E672A7A8917 /* Pods-FuelRateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelRateTests.release.xcconfig"; path = "Target Support Files/Pods-FuelRateTests/Pods-FuelRateTests.release.xcconfig"; sourceTree = "<group>"; };
+		E24380D3B82ED1A8A22323D0 /* libPods-FuelRateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FuelRateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8AB4491236E4F9666200525 /* libPods-FuelRate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FuelRate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3FE11DC7F016FA8CAC41F2A /* Pods-FuelRate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelRate.release.xcconfig"; path = "Target Support Files/Pods-FuelRate/Pods-FuelRate.release.xcconfig"; sourceTree = "<group>"; };
+		FE7908678F39E6BAEA4F0423 /* Pods-FuelRate-FuelRateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelRate-FuelRateUITests.debug.xcconfig"; path = "Target Support Files/Pods-FuelRate-FuelRateUITests/Pods-FuelRate-FuelRateUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		589A137526816FE50008AFC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		589A138B26816FE60008AFC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF0F50918EE24F3FBA3130F6 /* libPods-FuelRateTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		580D4634268435E200A52255 /* UpdateInfo */ = {
+			isa = PBXGroup;
+			children = (
+				589BF49A2683D79C00B69DA5 /* UpdateInfoVC.swift */,
+				589BF49C2683D8DB00B69DA5 /* UpdateInfoVCConfig.swift */,
+			);
+			path = UpdateInfo;
+			sourceTree = "<group>";
+		};
+		580D4637268481A200A52255 /* ResetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				58D507242684BE160025BC28 /* ResetPassword.swift */,
+			);
+			path = ResetPassword;
+			sourceTree = "<group>";
+		};
+		589A136F26816FE50008AFC9 = {
+			isa = PBXGroup;
+			children = (
+				589A137A26816FE50008AFC9 /* FuelRate */,
+				589A139126816FE60008AFC9 /* FuelRateTests */,
+				589A137926816FE50008AFC9 /* Products */,
+				AC58E34B5188386B655F28EE /* Pods */,
+				F00F4F55C08933B9DF70693E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		589A137926816FE50008AFC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				589A137826816FE50008AFC9 /* FuelRate.app */,
+				589A138E26816FE60008AFC9 /* FuelRateTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		589A137A26816FE50008AFC9 /* FuelRate */ = {
+			isa = PBXGroup;
+			children = (
+				589A13B3268170760008AFC9 /* Database */,
+				589A13B22681706E0008AFC9 /* View */,
+				589A13B1268170690008AFC9 /* Model */,
+				589A13AB26816FFB0008AFC9 /* Resources */,
+			);
+			path = FuelRate;
+			sourceTree = "<group>";
+		};
+		589A139126816FE60008AFC9 /* FuelRateTests */ = {
+			isa = PBXGroup;
+			children = (
+				589A139226816FE60008AFC9 /* FuelPriceTests.swift */,
+				589D884826854061002F7031 /* FieldValidationTests.swift */,
+				589A139426816FE60008AFC9 /* Info.plist */,
+			);
+			path = FuelRateTests;
+			sourceTree = "<group>";
+		};
+		589A13AB26816FFB0008AFC9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				589A1415268177960008AFC9 /* AppDelegate.swift */,
+				589A138426816FE60008AFC9 /* Assets.xcassets */,
+				589A138626816FE60008AFC9 /* LaunchScreen.storyboard */,
+				589A138926816FE60008AFC9 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		589A13B1268170690008AFC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				589BF48E26836C7600B69DA5 /* Stack */,
+				589BF48B2682BF1F00B69DA5 /* FuelPrice */,
+				589A141D26817EE90008AFC9 /* Client */,
+				589A13F02681710C0008AFC9 /* ViewController */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		589A13B22681706E0008AFC9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				589A13B52681708C0008AFC9 /* Login */,
+				589A142826819B940008AFC9 /* Registeration */,
+				589A13B62681708F0008AFC9 /* Tabbar */,
+				589A13B7268170960008AFC9 /* Home */,
+				589A13D3268170E40008AFC9 /* GetQuote */,
+				589A13B82681709E0008AFC9 /* FuelPrice */,
+				589A13B9268170A60008AFC9 /* FuelQuotes */,
+				589A13BA268170AC0008AFC9 /* Settings */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		589A13B3268170760008AFC9 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				589A1400268171420008AFC9 /* Struct */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		589A13B52681708C0008AFC9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				589A1422268185220008AFC9 /* LoginVC.swift */,
+				589A14242681854E0008AFC9 /* LoginVCConfig.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		589A13B62681708F0008AFC9 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				589A13DD268170F70008AFC9 /* TabbarVC.swift */,
+				589A13DE268170F70008AFC9 /* TabbarConfig.swift */,
+				589A13DC268170F70008AFC9 /* TabbarModel.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		589A13B7268170960008AFC9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				589A13CB268170E20008AFC9 /* Home.swift */,
+				589A13CC268170E20008AFC9 /* HomeConfig.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		589A13B82681709E0008AFC9 /* FuelPrice */ = {
+			isa = PBXGroup;
+			children = (
+				589A13C3268170DA0008AFC9 /* FuelPriceVC.swift */,
+				589A13C4268170DB0008AFC9 /* FuelPriceVCConfig.swift */,
+			);
+			path = FuelPrice;
+			sourceTree = "<group>";
+		};
+		589A13B9268170A60008AFC9 /* FuelQuotes */ = {
+			isa = PBXGroup;
+			children = (
+				589A13BB268170D30008AFC9 /* FuelQuoteVC.swift */,
+				589A13BC268170D30008AFC9 /* FuelQuoteVCConfig.swift */,
+			);
+			path = FuelQuotes;
+			sourceTree = "<group>";
+		};
+		589A13BA268170AC0008AFC9 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				589A13E8268171020008AFC9 /* Setting.swift */,
+				589A13E9268171020008AFC9 /* SettingConfig.swift */,
+				589BF4952683D73E00B69DA5 /* Account */,
+				589BF4962683D74600B69DA5 /* Privacy */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		589A13D3268170E40008AFC9 /* GetQuote */ = {
+			isa = PBXGroup;
+			children = (
+				589A13D4268170EF0008AFC9 /* GetQuote.swift */,
+				589A13D5268170EF0008AFC9 /* GetQuoteVCConfig.swift */,
+			);
+			path = GetQuote;
+			sourceTree = "<group>";
+		};
+		589A13F02681710C0008AFC9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				589A13F2268171180008AFC9 /* Components */,
+				589A13F1268171130008AFC9 /* Constants */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		589A13F1268171130008AFC9 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				589A13F3268171230008AFC9 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		589A13F2268171180008AFC9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				589A13F8268171280008AFC9 /* Components.swift */,
+				589A13F7268171280008AFC9 /* TextField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		589A1400268171420008AFC9 /* Struct */ = {
+			isa = PBXGroup;
+			children = (
+				589A14012681714E0008AFC9 /* Client.swift */,
+				589A1405268171590008AFC9 /* Address.swift */,
+				589A1409268171620008AFC9 /* FuelQuote.swift */,
+				589A140D2681716C0008AFC9 /* FuelFactors.swift */,
+			);
+			path = Struct;
+			sourceTree = "<group>";
+		};
+		589A141D26817EE90008AFC9 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				589A1426268196B80008AFC9 /* Login.swift */,
+				589A141E26817EF30008AFC9 /* Registeration.swift */,
+				589A14202681807B0008AFC9 /* Modification.swift */,
+				580D463526843C7D00A52255 /* Validation.swift */,
+				58D507262684D19B0025BC28 /* DeleteAccount.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		589A142826819B940008AFC9 /* Registeration */ = {
+			isa = PBXGroup;
+			children = (
+				589A142926819BA70008AFC9 /* RegisterationVC.swift */,
+				589A142B26819BB00008AFC9 /* RegisterationVCConfig.swift */,
+				589A142D2681C7C60008AFC9 /* RegisterationForm.swift */,
+				589BF481268235C200B69DA5 /* StateDropDown.swift */,
+				589BF48726823B7D00B69DA5 /* states.json */,
+			);
+			path = Registeration;
+			sourceTree = "<group>";
+		};
+		589BF48B2682BF1F00B69DA5 /* FuelPrice */ = {
+			isa = PBXGroup;
+			children = (
+				589BF48C2682BF2B00B69DA5 /* FuelPrice.swift */,
+				589D884A268552AC002F7031 /* FuelPriceDummy.swift */,
+			);
+			path = FuelPrice;
+			sourceTree = "<group>";
+		};
+		589BF48E26836C7600B69DA5 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				589BF48F26836C9100B69DA5 /* DatabaseStack.swift */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
+		589BF4952683D73E00B69DA5 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				580D463226842ECF00A52255 /* AccountManagment.swift */,
+				580D4634268435E200A52255 /* UpdateInfo */,
+				580D4637268481A200A52255 /* ResetPassword */,
+				580D4638268481B300A52255 /* AcountActions.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		589BF4962683D74600B69DA5 /* Privacy */ = {
+			isa = PBXGroup;
+			children = (
+				58D507282684D5120025BC28 /* PrivacyVC.swift */,
+			);
+			path = Privacy;
+			sourceTree = "<group>";
+		};
+		AC58E34B5188386B655F28EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05EBDC9BDD515332B3EE66E0 /* Pods-FuelRate.debug.xcconfig */,
+				F3FE11DC7F016FA8CAC41F2A /* Pods-FuelRate.release.xcconfig */,
+				FE7908678F39E6BAEA4F0423 /* Pods-FuelRate-FuelRateUITests.debug.xcconfig */,
+				33F836681931AD20E7B464E2 /* Pods-FuelRate-FuelRateUITests.release.xcconfig */,
+				4AF4324AD086FB01A46C90E3 /* Pods-FuelRateTests.debug.xcconfig */,
+				D30F79CAFA439E672A7A8917 /* Pods-FuelRateTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F00F4F55C08933B9DF70693E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8AB4491236E4F9666200525 /* libPods-FuelRate.a */,
+				6E4CF7E55E0AE59D9678F5AC /* libPods-FuelRate-FuelRateUITests.a */,
+				E24380D3B82ED1A8A22323D0 /* libPods-FuelRateTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		589A137726816FE50008AFC9 /* FuelRate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 589A13A226816FE60008AFC9 /* Build configuration list for PBXNativeTarget "FuelRate" */;
+			buildPhases = (
+				7DC57A13B3C9B2E43AFF091A /* [CP] Check Pods Manifest.lock */,
+				589A137426816FE50008AFC9 /* Sources */,
+				589A137526816FE50008AFC9 /* Frameworks */,
+				589A137626816FE50008AFC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FuelRate;
+			productName = FuelRate;
+			productReference = 589A137826816FE50008AFC9 /* FuelRate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		589A138D26816FE60008AFC9 /* FuelRateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 589A13A526816FE60008AFC9 /* Build configuration list for PBXNativeTarget "FuelRateTests" */;
+			buildPhases = (
+				F06C70CF85936A2A1F839404 /* [CP] Check Pods Manifest.lock */,
+				589A138A26816FE60008AFC9 /* Sources */,
+				589A138B26816FE60008AFC9 /* Frameworks */,
+				589A138C26816FE60008AFC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				589A139026816FE60008AFC9 /* PBXTargetDependency */,
+			);
+			name = FuelRateTests;
+			productName = FuelRateTests;
+			productReference = 589A138E26816FE60008AFC9 /* FuelRateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		589A137026816FE50008AFC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					589A137726816FE50008AFC9 = {
+						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
+					};
+					589A138D26816FE60008AFC9 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 589A137726816FE50008AFC9;
+					};
+				};
+			};
+			buildConfigurationList = 589A137326816FE50008AFC9 /* Build configuration list for PBXProject "FuelRate" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 589A136F26816FE50008AFC9;
+			productRefGroup = 589A137926816FE50008AFC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				589A137726816FE50008AFC9 /* FuelRate */,
+				589A138D26816FE60008AFC9 /* FuelRateTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		589A137626816FE50008AFC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				589A138826816FE60008AFC9 /* LaunchScreen.storyboard in Resources */,
+				589A138526816FE60008AFC9 /* Assets.xcassets in Resources */,
+				589BF48826823B7D00B69DA5 /* states.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		589A138C26816FE60008AFC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7DC57A13B3C9B2E43AFF091A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FuelRate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F06C70CF85936A2A1F839404 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FuelRateTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		589A137426816FE50008AFC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				589A13C5268170DB0008AFC9 /* FuelPriceVC.swift in Sources */,
+				589A142C26819BB00008AFC9 /* RegisterationVCConfig.swift in Sources */,
+				589A13E2268170F70008AFC9 /* TabbarVC.swift in Sources */,
+				589A1423268185220008AFC9 /* LoginVC.swift in Sources */,
+				589A13F9268171280008AFC9 /* TextField.swift in Sources */,
+				589A140A268171620008AFC9 /* FuelQuote.swift in Sources */,
+				589BF49D2683D8DB00B69DA5 /* UpdateInfoVCConfig.swift in Sources */,
+				589A13C8268170DB0008AFC9 /* FuelPriceVCConfig.swift in Sources */,
+				589A140E2681716C0008AFC9 /* FuelFactors.swift in Sources */,
+				589A1406268171590008AFC9 /* Address.swift in Sources */,
+				589D884B268552AC002F7031 /* FuelPriceDummy.swift in Sources */,
+				589A13ED268171020008AFC9 /* SettingConfig.swift in Sources */,
+				589A142A26819BA70008AFC9 /* RegisterationVC.swift in Sources */,
+				589A13F4268171230008AFC9 /* Constants.swift in Sources */,
+				589A141F26817EF30008AFC9 /* Registeration.swift in Sources */,
+				580D463626843C7D00A52255 /* Validation.swift in Sources */,
+				589A13EA268171020008AFC9 /* Setting.swift in Sources */,
+				589A14022681714E0008AFC9 /* Client.swift in Sources */,
+				589A13DF268170F70008AFC9 /* TabbarModel.swift in Sources */,
+				589A13C0268170D30008AFC9 /* FuelQuoteVCConfig.swift in Sources */,
+				58D507292684D5120025BC28 /* PrivacyVC.swift in Sources */,
+				589A1427268196B80008AFC9 /* Login.swift in Sources */,
+				589A13D0268170E20008AFC9 /* HomeConfig.swift in Sources */,
+				58D507252684BE160025BC28 /* ResetPassword.swift in Sources */,
+				589BF48D2682BF2B00B69DA5 /* FuelPrice.swift in Sources */,
+				589A13D9268170EF0008AFC9 /* GetQuoteVCConfig.swift in Sources */,
+				589A13CD268170E20008AFC9 /* Home.swift in Sources */,
+				589A13BD268170D30008AFC9 /* FuelQuoteVC.swift in Sources */,
+				589BF482268235C200B69DA5 /* StateDropDown.swift in Sources */,
+				589BF49026836C9100B69DA5 /* DatabaseStack.swift in Sources */,
+				580D463326842ECF00A52255 /* AccountManagment.swift in Sources */,
+				589A13D6268170EF0008AFC9 /* GetQuote.swift in Sources */,
+				58D507272684D19B0025BC28 /* DeleteAccount.swift in Sources */,
+				589A142E2681C7C60008AFC9 /* RegisterationForm.swift in Sources */,
+				589A14252681854E0008AFC9 /* LoginVCConfig.swift in Sources */,
+				589A1416268177960008AFC9 /* AppDelegate.swift in Sources */,
+				589A14212681807B0008AFC9 /* Modification.swift in Sources */,
+				589A13E5268170F70008AFC9 /* TabbarConfig.swift in Sources */,
+				589BF49B2683D79C00B69DA5 /* UpdateInfoVC.swift in Sources */,
+				580D4639268481B300A52255 /* AcountActions.swift in Sources */,
+				589A13FC268171280008AFC9 /* Components.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		589A138A26816FE60008AFC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				589D884C2685532B002F7031 /* FuelPriceDummy.swift in Sources */,
+				589D8842268535C3002F7031 /* Login.swift in Sources */,
+				589D8843268535C6002F7031 /* Registeration.swift in Sources */,
+				589D8844268535C9002F7031 /* Modification.swift in Sources */,
+				589D8841268535BE002F7031 /* FuelPrice.swift in Sources */,
+				589A139326816FE60008AFC9 /* FuelPriceTests.swift in Sources */,
+				589D884926854061002F7031 /* FieldValidationTests.swift in Sources */,
+				589A140F2681716C0008AFC9 /* FuelFactors.swift in Sources */,
+				589A1407268171590008AFC9 /* Address.swift in Sources */,
+				589D8840268535BA002F7031 /* DatabaseStack.swift in Sources */,
+				589A140B268171620008AFC9 /* FuelQuote.swift in Sources */,
+				589D8845268535CB002F7031 /* Validation.swift in Sources */,
+				589D8846268535CE002F7031 /* DeleteAccount.swift in Sources */,
+				589A14032681714E0008AFC9 /* Client.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		589A139026816FE60008AFC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 589A137726816FE50008AFC9 /* FuelRate */;
+			targetProxy = 589A138F26816FE60008AFC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		589A138626816FE60008AFC9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				589A138726816FE60008AFC9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		589A13A026816FE60008AFC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		589A13A126816FE60008AFC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		589A13A326816FE60008AFC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05EBDC9BDD515332B3EE66E0 /* Pods-FuelRate.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/FuelRate/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SoftwareDesign.FuelRate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SHARED_PRECOMPS_DIR = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		589A13A426816FE60008AFC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3FE11DC7F016FA8CAC41F2A /* Pods-FuelRate.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/FuelRate/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SoftwareDesign.FuelRate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SHARED_PRECOMPS_DIR = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		589A13A626816FE60008AFC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AF4324AD086FB01A46C90E3 /* Pods-FuelRateTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EXG8QZR967;
+				INFOPLIST_FILE = FuelRateTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SoftwareDesign.FuelRateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FuelRate.app/FuelRate";
+			};
+			name = Debug;
+		};
+		589A13A726816FE60008AFC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D30F79CAFA439E672A7A8917 /* Pods-FuelRateTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EXG8QZR967;
+				INFOPLIST_FILE = FuelRateTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SoftwareDesign.FuelRateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FuelRate.app/FuelRate";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		589A137326816FE50008AFC9 /* Build configuration list for PBXProject "FuelRate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				589A13A026816FE60008AFC9 /* Debug */,
+				589A13A126816FE60008AFC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		589A13A226816FE60008AFC9 /* Build configuration list for PBXNativeTarget "FuelRate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				589A13A326816FE60008AFC9 /* Debug */,
+				589A13A426816FE60008AFC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		589A13A526816FE60008AFC9 /* Build configuration list for PBXNativeTarget "FuelRateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				589A13A626816FE60008AFC9 /* Debug */,
+				589A13A726816FE60008AFC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 589A137026816FE50008AFC9 /* Project object */;
+}
