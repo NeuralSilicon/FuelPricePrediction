@@ -80,6 +80,7 @@ class DatabaseStack{
         self.group.enter()
         let userRef = self.ref.child("Client").child(uuid!).child("User")
         
+        //calling database to check for client with our id
         userRef.observe(.value, with: { snapshot in
          
             if !snapshot.hasChildren(){
