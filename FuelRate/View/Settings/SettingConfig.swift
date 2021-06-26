@@ -30,6 +30,7 @@ extension Setting{
     
 }
 
+// Ian Cooper
 extension Setting:UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         return UIView()

@@ -21,6 +21,12 @@ extension AccountManagment{
         }
     }
     
+
+    
+}
+
+// Ian Cooper
+extension AccountManagment{
     func deleteAccount(){
         let activity = UIAlertController(title: "Are you sure?", message: "This will delete your account along with all the information, permanently!", preferredStyle: .alert)
         
@@ -35,5 +41,4 @@ extension AccountManagment{
         activity.addAction(yes) ; activity.addAction(no)
         self.present(activity, animated: true, completion: nil)
     }
-    
 }

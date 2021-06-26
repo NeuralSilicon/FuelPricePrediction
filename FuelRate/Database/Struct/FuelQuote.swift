@@ -30,6 +30,7 @@ struct FuelQuote {
         totalAmountDue = dictionary["totalAmountDue"] as! Double
     }
     
+    // datasnapshot - google firebase
     init?(snapshot: DataSnapshot) {
       guard
         let value = snapshot.value as? [String: AnyObject],

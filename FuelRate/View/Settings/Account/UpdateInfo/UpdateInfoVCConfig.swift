@@ -46,6 +46,9 @@ extension UpdateInfoVC{
     
     }
     
+    
+    
+    // Ian Cooper
     @objc private func LoadMore(){
 
         if !checkUserPass(){
@@ -105,11 +108,16 @@ extension UpdateInfoVC{
         
     }
     
+    
+    // Ian Cooper
     private func checkUserPass()->Bool{
         guard let password = password.text, let pass = UserDefaults.standard.value(forKey: "password") as? String else {return false}
         return pass == password.trimmingCharacters(in: .whitespacesAndNewlines)
     }
     
+    
+    
+    // Ian Cooper
     @objc func updateInformation(){
         guard let fullname = registerationForm.fullname.text,
               let addressline1 = registerationForm.addresslineone.text,

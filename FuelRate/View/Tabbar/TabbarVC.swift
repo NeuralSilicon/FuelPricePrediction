@@ -1,5 +1,5 @@
 
-//Khalid Moutaouakil
+// Ian Cooper
 
 import UIKit
 import StoreKit

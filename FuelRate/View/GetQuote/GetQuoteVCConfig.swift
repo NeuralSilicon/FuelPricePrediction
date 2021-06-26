@@ -86,10 +86,11 @@ extension GetQuoteVC{
         
     }
 
+    // Ian Cooper
     @objc private func dimiss(){
         self.dismiss(animated: true, completion: nil)
     }
-    
+    // Ian Cooper
     @objc private func getQuote(){
         guard let amount = textField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
               , let uuid = UserDefaults.standard.value(forKey: "uuid") as? String
@@ -116,7 +117,7 @@ extension GetQuoteVC{
     }
 }
 
-
+// Ian Cooper
 extension GetQuoteVC:FuelPriceDelegate{
     func calculated(value: FuelQuote, address:Address) {
       
