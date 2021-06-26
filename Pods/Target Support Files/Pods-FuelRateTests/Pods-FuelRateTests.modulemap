@@ -1,0 +1,6 @@
+module Pods_FuelRateTests {
+  umbrella header "Pods-FuelRateTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
