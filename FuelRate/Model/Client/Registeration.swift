@@ -37,6 +37,14 @@ class Registeration{
     }
     
     func saveClient(){
+        
+        do{
+            self.client.password = try Encryption().aesEncrypt(KEY: "keykeykeykeykeyk", IV: "drowssapdrowssap", password: self.client.password)
+        }
+        catch{
+            os_log("failed to encrypt")
+        }
+        
         self.ref.child("Client").child(self.client.uuid).child("User").setValue(self.client.asPropertyList())
         self.ref.child("Client").child(self.client.uuid).child("Address").setValue(self.address.asPropertyList())
   

@@ -219,7 +219,7 @@ extension RegisterationForm:UITextFieldDelegate{
                 return false
             }
             let newLength = currentCharacterCount + string.count - range.length
-            return newLength > 4 && newLength < 9
+            return newLength <= 9
         default:
             break
         }

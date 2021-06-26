@@ -49,7 +49,7 @@ class Validation {
         case .addressLineOne:
             return address?.addressLineOne == "" ? false : address?.addressLineOne.count ?? 0 <= 100
         case .addressLineTwo:
-            return address?.addressLineTwo == "" ? false : address?.addressLineTwo.count ?? 0 <= 100
+            return address?.addressLineTwo.count ?? 0 <= 100
         case .city:
             return address?.city == "" ? false : true
         case .state:

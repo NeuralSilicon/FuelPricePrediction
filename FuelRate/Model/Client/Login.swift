@@ -35,6 +35,13 @@ class Login{
                     UserDefaults.standard.setValue(uuid, forKey: "uuid")
                     UserDefaults.standard.setValue(self.password, forKey: "password")
                     
+                    do{
+                        self.password = try Encryption().aesEncrypt(KEY: "keykeykeykeykeyk", IV: "drowssapdrowssap", password: self.password)
+                    }
+                    catch{
+                        os_log("failed to encrypt")
+                    }
+                    
                     self.ref.child("Client").child(uuid).child("User").child("password").setValue(self.password)
                     
                     succeeded(true)
