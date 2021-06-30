@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58002CA4268BF97B00BB06F8 /* libCryptoSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58002CA3268BF97B00BB06F8 /* libCryptoSwift.a */; };
 		580D463326842ECF00A52255 /* AccountManagment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D463226842ECF00A52255 /* AccountManagment.swift */; };
 		580D463626843C7D00A52255 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D463526843C7D00A52255 /* Validation.swift */; };
 		580D4639268481B300A52255 /* AcountActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D4638268481B300A52255 /* AcountActions.swift */; };
+		5871E1DB2686FCF100D1549A /* PasswordTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5871E1DA2686FCF100D1549A /* PasswordTest.swift */; };
+		5871E1DD2686FD0B00D1549A /* PasswordEncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5871E1DC2686FD0B00D1549A /* PasswordEncryption.swift */; };
+		5871E1DE2686FD1600D1549A /* PasswordEncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5871E1DC2686FD0B00D1549A /* PasswordEncryption.swift */; };
 		589A138526816FE60008AFC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 589A138426816FE60008AFC9 /* Assets.xcassets */; };
 		589A138826816FE60008AFC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 589A138626816FE60008AFC9 /* LaunchScreen.storyboard */; };
 		589A139326816FE60008AFC9 /* FuelPriceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A139226816FE60008AFC9 /* FuelPriceTests.swift */; };
@@ -65,7 +69,8 @@
 		58D507252684BE160025BC28 /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D507242684BE160025BC28 /* ResetPassword.swift */; };
 		58D507272684D19B0025BC28 /* DeleteAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D507262684D19B0025BC28 /* DeleteAccount.swift */; };
 		58D507292684D5120025BC28 /* PrivacyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D507282684D5120025BC28 /* PrivacyVC.swift */; };
-		AF0F50918EE24F3FBA3130F6 /* libPods-FuelRateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E24380D3B82ED1A8A22323D0 /* libPods-FuelRateTests.a */; };
+		5DD0EB112D204B86207E0334 /* libPods-FuelRate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8AB4491236E4F9666200525 /* libPods-FuelRate.a */; };
+		D45A6AF9937B01788D32F2A2 /* libPods-FuelRateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D45D502A1019BF03A8A91361 /* libPods-FuelRateTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,11 +85,14 @@
 
 /* Begin PBXFileReference section */
 		05EBDC9BDD515332B3EE66E0 /* Pods-FuelRate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelRate.debug.xcconfig"; path = "Target Support Files/Pods-FuelRate/Pods-FuelRate.debug.xcconfig"; sourceTree = "<group>"; };
+		1CD10CEE995CE3971064F982 /* Pods-FuelRateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelRateTests.release.xcconfig"; path = "Target Support Files/Pods-FuelRateTests/Pods-FuelRateTests.release.xcconfig"; sourceTree = "<group>"; };
 		33F836681931AD20E7B464E2 /* Pods-FuelRate-FuelRateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelRate-FuelRateUITests.release.xcconfig"; path = "Target Support Files/Pods-FuelRate-FuelRateUITests/Pods-FuelRate-FuelRateUITests.release.xcconfig"; sourceTree = "<group>"; };
-		4AF4324AD086FB01A46C90E3 /* Pods-FuelRateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelRateTests.debug.xcconfig"; path = "Target Support Files/Pods-FuelRateTests/Pods-FuelRateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		58002CA3268BF97B00BB06F8 /* libCryptoSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCryptoSwift.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		580D463226842ECF00A52255 /* AccountManagment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManagment.swift; sourceTree = "<group>"; };
 		580D463526843C7D00A52255 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		580D4638268481B300A52255 /* AcountActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcountActions.swift; sourceTree = "<group>"; };
+		5871E1DA2686FCF100D1549A /* PasswordTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordTest.swift; sourceTree = "<group>"; };
+		5871E1DC2686FD0B00D1549A /* PasswordEncryption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordEncryption.swift; sourceTree = "<group>"; };
 		589A137826816FE50008AFC9 /* FuelRate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuelRate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		589A138426816FE60008AFC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		589A138726816FE60008AFC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -133,8 +141,8 @@
 		58D507262684D19B0025BC28 /* DeleteAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAccount.swift; sourceTree = "<group>"; };
 		58D507282684D5120025BC28 /* PrivacyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyVC.swift; sourceTree = "<group>"; };
 		6E4CF7E55E0AE59D9678F5AC /* libPods-FuelRate-FuelRateUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FuelRate-FuelRateUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D30F79CAFA439E672A7A8917 /* Pods-FuelRateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelRateTests.release.xcconfig"; path = "Target Support Files/Pods-FuelRateTests/Pods-FuelRateTests.release.xcconfig"; sourceTree = "<group>"; };
-		E24380D3B82ED1A8A22323D0 /* libPods-FuelRateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FuelRateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D45D502A1019BF03A8A91361 /* libPods-FuelRateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FuelRateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9B6559F6B604AC57705A896 /* Pods-FuelRateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelRateTests.debug.xcconfig"; path = "Target Support Files/Pods-FuelRateTests/Pods-FuelRateTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E8AB4491236E4F9666200525 /* libPods-FuelRate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FuelRate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3FE11DC7F016FA8CAC41F2A /* Pods-FuelRate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelRate.release.xcconfig"; path = "Target Support Files/Pods-FuelRate/Pods-FuelRate.release.xcconfig"; sourceTree = "<group>"; };
 		FE7908678F39E6BAEA4F0423 /* Pods-FuelRate-FuelRateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelRate-FuelRateUITests.debug.xcconfig"; path = "Target Support Files/Pods-FuelRate-FuelRateUITests/Pods-FuelRate-FuelRateUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +153,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58002CA4268BF97B00BB06F8 /* libCryptoSwift.a in Frameworks */,
+				5DD0EB112D204B86207E0334 /* libPods-FuelRate.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF0F50918EE24F3FBA3130F6 /* libPods-FuelRateTests.a in Frameworks */,
+				D45A6AF9937B01788D32F2A2 /* libPods-FuelRateTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +222,7 @@
 			children = (
 				589A139226816FE60008AFC9 /* FuelPriceTests.swift */,
 				589D884826854061002F7031 /* FieldValidationTests.swift */,
+				5871E1DA2686FCF100D1549A /* PasswordTest.swift */,
 				589A139426816FE60008AFC9 /* Info.plist */,
 			);
 			path = FuelRateTests;
@@ -371,6 +382,7 @@
 				589A1426268196B80008AFC9 /* Login.swift */,
 				589A141E26817EF30008AFC9 /* Registeration.swift */,
 				589A14202681807B0008AFC9 /* Modification.swift */,
+				5871E1DC2686FD0B00D1549A /* PasswordEncryption.swift */,
 				580D463526843C7D00A52255 /* Validation.swift */,
 				58D507262684D19B0025BC28 /* DeleteAccount.swift */,
 			);
@@ -432,8 +444,8 @@
 				F3FE11DC7F016FA8CAC41F2A /* Pods-FuelRate.release.xcconfig */,
 				FE7908678F39E6BAEA4F0423 /* Pods-FuelRate-FuelRateUITests.debug.xcconfig */,
 				33F836681931AD20E7B464E2 /* Pods-FuelRate-FuelRateUITests.release.xcconfig */,
-				4AF4324AD086FB01A46C90E3 /* Pods-FuelRateTests.debug.xcconfig */,
-				D30F79CAFA439E672A7A8917 /* Pods-FuelRateTests.release.xcconfig */,
+				D9B6559F6B604AC57705A896 /* Pods-FuelRateTests.debug.xcconfig */,
+				1CD10CEE995CE3971064F982 /* Pods-FuelRateTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -441,9 +453,10 @@
 		F00F4F55C08933B9DF70693E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				58002CA3268BF97B00BB06F8 /* libCryptoSwift.a */,
 				E8AB4491236E4F9666200525 /* libPods-FuelRate.a */,
 				6E4CF7E55E0AE59D9678F5AC /* libPods-FuelRate-FuelRateUITests.a */,
-				E24380D3B82ED1A8A22323D0 /* libPods-FuelRateTests.a */,
+				D45D502A1019BF03A8A91361 /* libPods-FuelRateTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -473,7 +486,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 589A13A526816FE60008AFC9 /* Build configuration list for PBXNativeTarget "FuelRateTests" */;
 			buildPhases = (
-				F06C70CF85936A2A1F839404 /* [CP] Check Pods Manifest.lock */,
+				9741A3CDB8538F224037E75E /* [CP] Check Pods Manifest.lock */,
 				589A138A26816FE60008AFC9 /* Sources */,
 				589A138B26816FE60008AFC9 /* Frameworks */,
 				589A138C26816FE60008AFC9 /* Resources */,
@@ -569,7 +582,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F06C70CF85936A2A1F839404 /* [CP] Check Pods Manifest.lock */ = {
+		9741A3CDB8538F224037E75E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -615,6 +628,7 @@
 				589A141F26817EF30008AFC9 /* Registeration.swift in Sources */,
 				580D463626843C7D00A52255 /* Validation.swift in Sources */,
 				589A13EA268171020008AFC9 /* Setting.swift in Sources */,
+				5871E1DD2686FD0B00D1549A /* PasswordEncryption.swift in Sources */,
 				589A14022681714E0008AFC9 /* Client.swift in Sources */,
 				589A13DF268170F70008AFC9 /* TabbarModel.swift in Sources */,
 				589A13C0268170D30008AFC9 /* FuelQuoteVCConfig.swift in Sources */,
@@ -647,6 +661,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				589D884C2685532B002F7031 /* FuelPriceDummy.swift in Sources */,
+				5871E1DE2686FD1600D1549A /* PasswordEncryption.swift in Sources */,
 				589D8842268535C3002F7031 /* Login.swift in Sources */,
 				589D8843268535C6002F7031 /* Registeration.swift in Sources */,
 				589D8844268535C9002F7031 /* Modification.swift in Sources */,
@@ -656,6 +671,7 @@
 				589A140F2681716C0008AFC9 /* FuelFactors.swift in Sources */,
 				589A1407268171590008AFC9 /* Address.swift in Sources */,
 				589D8840268535BA002F7031 /* DatabaseStack.swift in Sources */,
+				5871E1DB2686FCF100D1549A /* PasswordTest.swift in Sources */,
 				589A140B268171620008AFC9 /* FuelQuote.swift in Sources */,
 				589D8845268535CB002F7031 /* Validation.swift in Sources */,
 				589D8846268535CE002F7031 /* DeleteAccount.swift in Sources */,
@@ -848,7 +864,7 @@
 		};
 		589A13A626816FE60008AFC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AF4324AD086FB01A46C90E3 /* Pods-FuelRateTests.debug.xcconfig */;
+			baseConfigurationReference = D9B6559F6B604AC57705A896 /* Pods-FuelRateTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -871,7 +887,7 @@
 		};
 		589A13A726816FE60008AFC9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D30F79CAFA439E672A7A8917 /* Pods-FuelRateTests.release.xcconfig */;
+			baseConfigurationReference = 1CD10CEE995CE3971064F982 /* Pods-FuelRateTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

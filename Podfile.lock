@@ -1,4 +1,5 @@
 PODS:
+  - CryptoSwift (1.4.0)
   - Firebase/Auth (6.27.0):
     - Firebase/CoreOnly
     - FirebaseAuth (~> 6.6.0)
@@ -80,12 +81,14 @@ PODS:
   - PromisesObjC (1.2.9)
 
 DEPENDENCIES:
+  - CryptoSwift (~> 1.4.0)
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
 
 SPEC REPOS:
   trunk:
+    - CryptoSwift
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -103,6 +106,7 @@ SPEC REPOS:
     - PromisesObjC
 
 SPEC CHECKSUMS:
+  CryptoSwift: 7cc902df1784de3b389a387756c7d710f197730c
   Firebase: fc4cbf6f1592636431821ef9a3c557e4dfd9f268
   FirebaseAnalytics: 0ea640473474f036cabbc2576e20c2d63671c92f
   FirebaseAuth: b85c064e0ac60f82486728d50a4803f235687302
@@ -119,6 +123,6 @@ SPEC CHECKSUMS:
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
   PromisesObjC: b48e0338dbbac2207e611750777895f7a5811b75
 
-PODFILE CHECKSUM: 8218ad3301c3d319baeef479f444f2ded48f53ad
+PODFILE CHECKSUM: 535544a1d231c7d73851477f9a668a92071163f3
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.10.1
