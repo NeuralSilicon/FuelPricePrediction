@@ -123,6 +123,7 @@ extension GetQuoteVC:FuelPriceDelegate{
       
         let vc = FuelPriceVC()
         vc.fuelQuote = value ; vc.address = address
+        vc.button.isHidden = false
         
         var transform = CGAffineTransform(rotationAngle: -.pi/2)
         transform = transform.translatedBy(x: 0, y: -view.frame.height*0.7)

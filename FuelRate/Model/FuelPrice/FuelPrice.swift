@@ -45,7 +45,7 @@ class FuelPrice{
         
         group.notify(queue: .main) {
             self.calculatePrice()
-            self.saveQuote()
+
             self.delegate?.calculated(value:  self.fuelQuote, address:  self.address)
         }
     }

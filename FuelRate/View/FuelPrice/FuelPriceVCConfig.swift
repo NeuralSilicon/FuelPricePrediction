@@ -36,6 +36,22 @@ extension FuelPriceVC{
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: .bottomConstant)
         ])
         tableView.transform = CGAffineTransform(translationX: -self.view.frame.width, y: 0)
+        
+        view.addSubview(button)
+        NSLayoutConstraint.activate([
+            button.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: .bottomConstant*4),
+            button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            button.heightAnchor.constraint(equalToConstant: 40),
+            button.widthAnchor.constraint(equalToConstant: 100)
+        ])
+        button.addTarget(self, action: #selector(save), for: .touchUpInside)
+        
+    }
+    @objc private func save(){
+        let fuelPrice = FuelPrice(fuelQuote: self.fuelQuote)
+        fuelPrice.address = self.address
+        fuelPrice.saveQuote()
+        self.dismiss(animated: true, completion: nil)
     }
     
     @objc private func dimiss(){

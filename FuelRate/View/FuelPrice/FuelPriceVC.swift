@@ -31,6 +31,13 @@ class FuelPriceVC: UIViewController {
         return button
     }()
     
+    var button:UIButton={
+        let button = UIButton()
+        button.isHidden = true
+        button.Button(text: "Submit")
+        return button
+    }()
+    
     var fuelQuote:FuelQuote!
     var address:Address!
     
