@@ -1,6 +1,9 @@
 # SoftwareDesign-Project
 4353-SoftwareDesign: Project
 
+UI Elements reside inside FuelRate > View
+Model Components reside inside FuelRate > Model
+
 Team Members:
 
 Ian Cooper
