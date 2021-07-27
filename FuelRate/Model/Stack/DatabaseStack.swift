@@ -56,7 +56,7 @@ class DatabaseStack{
         guard let uuid = UserDefaults.standard.value(forKey: "uuid") as? String else {
             return
         }
-        
+        self.address = Address()
         self.group.enter()
         let addressRef = self.ref.child("Client").child(uuid).child("Address")
         addressRef.observe(.value, with: { snapshot in
