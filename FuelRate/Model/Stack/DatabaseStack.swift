@@ -21,12 +21,12 @@ class DatabaseStack{
     }
 
     func RetrieveList(){
-        guard uuid != nil else {
+        guard let uuid = UserDefaults.standard.value(forKey: "uuid") as? String else {
             return
         }
 
         self.group.enter()
-        let fuelquotes = self.ref.child("Client").child(uuid!).child("FuelQuotes")
+        let fuelquotes = self.ref.child("Client").child(uuid).child("FuelQuotes")
         
         fuelquotes.queryOrdered(byChild: "requestedDate").observe(.value, with: { snapshot in
             
@@ -53,12 +53,12 @@ class DatabaseStack{
     }
 
     func RetrieveAddress(){
-        guard uuid != nil else {
+        guard let uuid = UserDefaults.standard.value(forKey: "uuid") as? String else {
             return
         }
         
         self.group.enter()
-        let addressRef = self.ref.child("Client").child(uuid!).child("Address")
+        let addressRef = self.ref.child("Client").child(uuid).child("Address")
         addressRef.observe(.value, with: { snapshot in
 
             if !snapshot.hasChildren(){
@@ -74,11 +74,11 @@ class DatabaseStack{
     }
     
     func RetrieveClient(){
-        guard uuid != nil else {
+        guard let uuid = UserDefaults.standard.value(forKey: "uuid") as? String else {
             return
         }
         self.group.enter()
-        let userRef = self.ref.child("Client").child(uuid!).child("User")
+        let userRef = self.ref.child("Client").child(uuid).child("User")
         
         //calling database to check for client with our id
         userRef.observe(.value, with: { snapshot in
