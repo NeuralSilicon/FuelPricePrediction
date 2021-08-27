@@ -1,5 +1,4 @@
-# SoftwareDesign-Project
-4353-SoftwareDesign: Project
+# FuelPricePrediction
 
 **UI Elements** reside inside FuelRate > View
 
