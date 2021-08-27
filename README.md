@@ -6,7 +6,7 @@
 
 **Contributors**
 
-Ian Cooper: Architech, designer, and engineer
+Ian Cooper: Architect, designer, and engineer
 
 Khalid Moutaouakil: Engineer
 
