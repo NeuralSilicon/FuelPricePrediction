@@ -17,7 +17,7 @@ class FuelPrice{
     var group:DispatchGroup!
     
     init(fuelQuote:FuelQuote) {
-        ref = Database.database(url: "https://fuelrate-7520e-default-rtdb.firebaseio.com/").reference()// write and read from database
+        ref = Database.database(url: "").reference()// write and read from database
         self.fuelQuote = fuelQuote
         self.uuid = UserDefaults.standard.value(forKey: "uuid") as? String ?? nil
         self.fuelFactor = FuelFactors(); self.address = Address(); self.group = DispatchGroup()
