@@ -16,7 +16,7 @@ class Login{
     var delegate:LoginDelegate?
     
     init(username:String, password:String) {
-        ref = Database.database(url: "https://fuelrate-7520e-default-rtdb.firebaseio.com/").reference()
+        ref = Database.database(url: "").reference()
         self.username = username ;  self.password = password
     }
     
