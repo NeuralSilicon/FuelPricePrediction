@@ -19,7 +19,7 @@ class Registeration{
     var delegate:RegisterationDelegate?
     
     init(client:Client, address:Address) {
-        ref = Database.database(url: "https://fuelrate-7520e-default-rtdb.firebaseio.com/").reference(); self.client = client
+        ref = Database.database(url: ").reference(); self.client = client
         self.address = address
     }
     
