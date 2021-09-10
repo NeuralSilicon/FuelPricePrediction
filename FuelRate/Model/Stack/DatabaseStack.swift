@@ -16,7 +16,7 @@ class DatabaseStack{
     private var uuid:String?
     
     init() {
-        ref = Database.database(url: "https://fuelrate-7520e-default-rtdb.firebaseio.com/").reference()
+        ref = Database.database(url: ").reference()
         self.uuid = UserDefaults.standard.value(forKey: "uuid") as? String ?? nil
     }
 
