@@ -11,7 +11,7 @@ class DeleteAccount {
     var ref: DatabaseReference!
     
     init() {
-        ref = Database.database(url: "https://fuelrate-7520e-default-rtdb.firebaseio.com/").reference()
+        ref = Database.database(url: "").reference()
         guard let uuid = UserDefaults.standard.value(forKey: "uuid") as? String else {return}
         self.uuid = uuid
     }
