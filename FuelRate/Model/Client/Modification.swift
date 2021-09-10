@@ -17,7 +17,7 @@ class Modification{
     var uuid:String!
     
     init(client:Client, address:Address) {
-        ref = Database.database(url: "https://fuelrate-7520e-default-rtdb.firebaseio.com/").reference()
+        ref = Database.database(url: "").reference()
         self.client = client; self.address = address
         uuid = UserDefaults.standard.value(forKey: "uuid") as? String
     }
